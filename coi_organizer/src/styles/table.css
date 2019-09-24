@@ -1,0 +1,73 @@
+div{
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box; 
+  justify-content: space-around;
+}
+
+caption{
+  background-color: rgba(226, 57, 226, 0.74);
+  color: gold;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3em;
+  border: 1px solid black;
+  width: 8em
+}
+
+.table_container {
+  margin: 10px, auto;
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px, solid black;
+  padding: .2em;
+}
+
+th {
+  color: aliceblue;
+  padding: .2em;
+  border: 1px solid black;
+}
+
+.flex-table-header{
+    background-color: rgba(226, 57, 226, 0.74);
+    color: aliceblue;
+
+}
+
+
+.flex-row, .flex-cell {
+  text-align: center;
+  color: whitesmoke;
+  background-color: rgb(146, 98, 192);
+  background-blend-mode: color-burn;
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .table-container {
+    //display: block;
+  }
+  th, td {
+    width: auto;
+    display: block;
+    border: 0;
+  }
+  
+  th {
+    border-left: solid 1px green;
+    border-right: solid 1px green;
+    border-bottom: solid 1px green;
+  }
+  
+  td {
+    border-left: solid 1px blueviolet;
+    border-right: solid 1px blueviolet;
+    border-bottom: solid 1px blueviolet;
+  }
+  
+  .flex-row {
+    width: 100%;
+  }
+}
